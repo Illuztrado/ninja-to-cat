@@ -1,0 +1,21 @@
+/*CSS reset settings here*/
+*{
+    margin: 0px;
+    padding: 0px;
+    /* outline: 1px dotted red; */
+}
+#wrapper{
+    width: 250px;
+    margin: 50px auto;
+}
+#wrapper div{
+    height: 70px;
+}
+#wrapper .firstPhoto{
+    height: 70px;
+}
+#wrapper img{
+    width: 250px;
+    display: block;
+    margin-top: 5px;
+}

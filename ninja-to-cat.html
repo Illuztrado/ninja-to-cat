@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       <meta charset="UTF-8">
+       <meta name="description" content="This is a practice code for the CSS assignment, Disappearing Ninja.">
+       <title>Disappearing Ninja</title>
+       <link rel="stylesheet" type="text/css" href="ninja-to-cat.css">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $("img").click(function() {
+                    // console.log("data-alt-src value is", $(this).attr("data-alt-src"));
+                    var newImgSource = $(this).attr("data-alt-src");
+                    var newAltImgSource = $(this).attr("src");
+                    $(this).attr("src", newImgSource);
+                    $(this).attr("data-alt-src", newAltImgSource);
+                });
+            });
+         </script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <div><img src="img/cat0.png" data-alt-src="img/ninja0.png" class="firstPhoto"></div>
+            <div><img src="img/ninja1.png" data-alt-src="img/cat1.png"></div>
+            <div><img src="img/cat2.png" data-alt-src="img/ninja2.png"></div>
+            <div><img src="img/ninja3.png" data-alt-src="img/cat3.png"></div>
+            <div><img src="img/ninja4.png" data-alt-src="img/cat4.png"></div>
+        </div><!-- end of wrapper -->
+    </body>
+</html>
